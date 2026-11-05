@@ -144,7 +144,7 @@ VERIFY = ("Buyer to verify all information before closing, including price, size
 
 def shell(slug, title, desc, body, schema=None, active=None):
     url = SITE + slug
-    robots = "index,follow" if LIVE else "noindex,nofollow"
+    robots = "index,follow" if LIVE and slug != "/404.html" else "noindex,nofollow"
     ld = "\n".join(f'<script type="application/ld+json">{json.dumps(s)}</script>' for s in [BUSINESS_SCHEMA] + (schema or []))
     nav = "".join(f'<a href="{B(u)}"{" aria-current=page" if u == active else ""}>{t}</a>' for u, t in NAV)
     css = CSS.replace("IMGBASE", BASE)
