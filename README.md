@@ -19,5 +19,5 @@ Rebuild: `python3 build.py`
 3. Namecheap DNS: A records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; CNAME `www` → `equitygroup904-dev.github.io`.
 4. Repo Settings → Pages → custom domain `equitygroupjax.com`, Enforce HTTPS.
 
-## Still open
-- GHL "Cash Buyer Sign-Up" form (Jacksonville Cash Home Buyers sub-account only): paste its ID into `BUYER_FORM_ID`.
+## Buyer form
+GHL "Cash Buyer Sign-Up" form `K0FD3RRCNOUlr2DS7V7S` (Jacksonville Cash Home Buyers sub-account), set in `BUYER_FORM_ID`.

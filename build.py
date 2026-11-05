@@ -23,7 +23,7 @@ SISTER = "https://www.jaxcashbuyers.com"
 
 # GHL "Cash Buyer Sign-Up" form, Jacksonville Cash Home Buyers sub-account (RUJDZc7TyNghXiWDMthZ) ONLY.
 # Paste the form ID here once the form is built in GHL. Until then the page shows a call/text fallback.
-BUYER_FORM_ID = ""
+BUYER_FORM_ID = "K0FD3RRCNOUlr2DS7V7S"
 
 B = lambda p: BASE + p  # site-relative link
 
@@ -235,9 +235,9 @@ def cta(h="Get matched deals before they hit the full list.", p="Tell us what yo
 def form_block(area_hint=""):
     if BUYER_FORM_ID:
         f = BUYER_FORM_ID
-        embed = (f'<iframe src="https://api.leadconnectorhq.com/widget/form/{f}" style="width:100%;height:900px;border:none;border-radius:8px" '
+        embed = (f'<iframe src="https://api.leadconnectorhq.com/widget/form/{f}" style="width:100%;height:1750px;border:none;border-radius:8px" '
                  f'id="inline-{f}" data-layout="{{\'id\':\'INLINE\'}}" data-trigger-type="alwaysShow" data-activation-type="alwaysActivated" '
-                 f'data-deactivation-type="neverDeactivate" data-form-name="Cash Buyer Sign-Up" data-height="900" '
+                 f'data-deactivation-type="neverDeactivate" data-form-name="Cash Buyer Sign-Up" data-height="1750" '
                  f'data-layout-iframe-id="inline-{f}" data-form-id="{f}" title="Join the cash buyers list"></iframe>'
                  f'<script src="https://link.msgsndr.com/js/form_embed.js" defer></script>')
     else:
