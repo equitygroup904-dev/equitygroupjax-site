@@ -17,9 +17,18 @@
     "est_arv": null,
     "est_repairs": null,
     "est_rent": null,
-    "details": ["Vacant lot", "Approx. 1,745 sq ft", "Public utilities accessible (as stated)"],
+    "details": [
+      "Vacant lot",
+      "Approx. 1,745 sq ft",
+      "Public utilities accessible (as stated)"
+    ],
     "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
-    "photos": [],
+    "photos": [
+      {
+        "src": "/img/deals/4508-friden-dr-jacksonville-32209-vacant-lot-parcel-map.webp",
+        "alt": "Aerial parcel map of the vacant lot at 4508 Friden Dr, Jacksonville FL 32209, with lot lines outlined"
+      }
+    ],
     "listed": "2026-11-03"
   },
   {
@@ -40,9 +49,18 @@
     "est_arv": null,
     "est_repairs": null,
     "est_rent": null,
-    "details": ["Vacant beachfront land", "Approx. 100' x 35' (3,500 sq ft)", "No survey on file"],
+    "details": [
+      "Vacant beachfront land",
+      "Approx. 100' x 35' (3,500 sq ft)",
+      "No survey on file"
+    ],
     "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
-    "photos": [],
+    "photos": [
+      {
+        "src": "/img/deals/n-fletcher-ave-fernandina-beach-lot-parcel-map.webp",
+        "alt": "Plat map of the vacant lot on N Fletcher Ave, Fernandina Beach FL, Ocean View Estates, with the lot outlined in red"
+      }
+    ],
     "listed": "2026-11-04"
   }
 ]

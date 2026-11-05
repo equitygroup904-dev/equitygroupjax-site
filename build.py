@@ -90,7 +90,7 @@ section{padding:56px 0}section.alt{background:var(--bg)}h2{font-size:30px;line-h
 table.facts{width:100%;border-collapse:collapse}table.facts th,table.facts td{padding:11px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 table.facts th{color:var(--mute);font-weight:600;width:42%;padding-right:12px}
 .dealhead{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:start}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{border-radius:12px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{border-radius:12px;aspect-ratio:3/2;object-fit:cover;width:100%}.gallery.one{grid-template-columns:1fr}.gallery.one img{aspect-ratio:auto;object-fit:contain;background:#eef2f6}
 .noimg{aspect-ratio:3/2;border-radius:14px;background:linear-gradient(135deg,#e8eef4,#d5e0eb);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--navy-2);gap:8px;font-weight:600}
 .pricebox{background:var(--navy);color:#fff;border-radius:16px;padding:24px;position:sticky;top:90px}.pricebox .price{font-size:36px;font-weight:800;line-height:1.1}
 .pricebox p{color:#dbe6f2;margin:6px 0 16px}.pricebox .btn{display:block;text-align:center;margin-top:10px}
@@ -380,7 +380,7 @@ for d in DEALS:
     rows.append(("Terms", d["terms"]))
     facts = "".join(f"<tr><th>{esc(a)}</th><td>{esc(b)}</td></tr>" for a, b in rows if b)
     if d.get("photos"):
-        media = '<div class="gallery">' + "".join(f'<img src="{B(p["src"])}" alt="{esc(p["alt"])}" loading="lazy" width="600" height="400">' for p in d["photos"]) + "</div>"
+        media = f'<div class="gallery{" one" if len(d["photos"]) == 1 else ""}">' + "".join(f'<img src="{B(p["src"])}" alt="{esc(p["alt"])}" loading="lazy" width="600" height="400">' for p in d["photos"]) + "</div>"
     else:
         media = f'<div class="noimg">{LAND_SVG}<span>Photos and parcel map on request</span></div>'
     bullets = "".join(f"<li>{esc(x)}</li>" for x in d.get("details", []))
