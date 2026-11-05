@@ -1,6 +1,6 @@
 # equitygroupjax.com
 
-Static site for American Equity Group (cash buyers), hosted on GitHub Pages from `/docs`. Same setup as `jaxcashbuyers-site`.
+Static site for American Equity Group (cash buyers), hosted on GitHub Pages from `/docs`.
 
 - `build.py` — every page (copy, SEO titles/meta, schema, layout) and builds into `docs/`, with sitemap.xml and robots.txt
 - `content/deals.json` — the deals. Add, edit, or change `status` (Available / Under Offer / Sold) and rebuild
@@ -20,4 +20,4 @@ Rebuild: `python3 build.py`
 4. Repo Settings → Pages → custom domain `equitygroupjax.com`, Enforce HTTPS.
 
 ## Buyer form
-GHL "Cash Buyer Sign-Up" form `K0FD3RRCNOUlr2DS7V7S` (Jacksonville Cash Home Buyers sub-account), set in `BUYER_FORM_ID`.
+GHL "Cash Buyer Sign-Up" form `K0FD3RRCNOUlr2DS7V7S` (GHL sub-account RUJDZc7TyNghXiWDMthZ), set in `BUYER_FORM_ID`.

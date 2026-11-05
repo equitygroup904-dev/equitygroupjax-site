@@ -19,9 +19,8 @@ LIVE = True
 BRAND = "American Equity Group"
 PHONE = "(904) 685-8024"
 TEL = "+19046858024"
-SISTER = "https://www.jaxcashbuyers.com"
 
-# GHL "Cash Buyer Sign-Up" form, Jacksonville Cash Home Buyers sub-account (RUJDZc7TyNghXiWDMthZ) ONLY.
+# GHL "Cash Buyer Sign-Up" form, GHL sub-account RUJDZc7TyNghXiWDMthZ ONLY.
 # Paste the form ID here once the form is built in GHL. Until then the page shows a call/text fallback.
 BUYER_FORM_ID = "K0FD3RRCNOUlr2DS7V7S"
 
@@ -29,7 +28,7 @@ B = lambda p: BASE + p  # site-relative link
 
 BUSINESS_SCHEMA = {
     "@context": "https://schema.org", "@type": "LocalBusiness", "@id": SITE + "/#business",
-    "name": BRAND + " (Jacksonville Cash Home Buyers)", "legalName": "American Equity Group LLC",
+    "name": BRAND, "legalName": "American Equity Group LLC",
     "url": SITE + "/", "telephone": TEL, "logo": SITE + "/img/american-equity-group-logo.webp", "image": SITE + "/img/jax-skyline-hero.webp",
     "description": "Off-market investment properties, rentals, fix-and-flips and land in Jacksonville and North Florida for cash buyers.",
     "address": {"@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US"},
@@ -37,7 +36,7 @@ BUSINESS_SCHEMA = {
                    ["Duval", "Nassau", "Clay", "St. Johns", "Baker", "Putnam", "Flagler"]],
     "founder": {"@type": "Person", "name": "James Stallworth"},
     "foundingDate": "2016",
-    "sameAs": [SISTER + "/", "https://www.linkedin.com/company/american-equity-group-llc/"],
+    "sameAs": ["https://www.linkedin.com/company/american-equity-group-llc/"],
 }
 
 CSS = """
@@ -166,9 +165,9 @@ def shell(slug, title, desc, body, schema=None, active=None):
 {body}
 </main>
 <footer><div class="wrap cols"><div><b>{BRAND} LLC</b><br>Off-market rentals, flips and land in Jacksonville and North Florida.<br>
-Call or text <a href="tel:{TEL}">{PHONE}</a><p>Veteran-owned. Also buying houses as <a href="{SISTER}/">Jacksonville Cash Home Buyers</a>.</p></div>
+Call or text <a href="tel:{TEL}">{PHONE}</a><p>Veteran-owned and based in Jacksonville.</p></div>
 <div><b>Buyers</b><br><a href="{B('/current-deals/')}">Current deals</a><br><a href="{B('/join-buyers-list/')}">Join the buyers list</a><br><a href="{B('/how-we-work/')}">How we work</a></div>
-<div><b>Company</b><br><a href="{B('/contact/')}">Contact</a><br><a href="{SISTER}/privacy-policy/">Privacy policy</a><br><a href="{SISTER}/our-company/">About James</a></div></div>
+<div><b>Company</b><br><a href="{B('/contact/')}">Contact</a><br><a href="{B('/privacy-policy/')}">Privacy policy</a><br><a href="{B('/terms/')}">Terms</a></div></div>
 <div class="wrap verify"><b>Buyer to verify.</b> {VERIFY}<br>© {datetime.date.today().year} American Equity Group LLC.</div></footer>
 <div class="stickycall"><a href="tel:{TEL}">Call {PHONE}</a><a href="sms:{TEL}">Text us</a></div>
 </body></html>"""
@@ -292,7 +291,7 @@ page("/", "Jacksonville Off-Market Properties for Cash Buyers | AEG",
 <p style="margin-top:20px"><a href="{B('/how-we-work/')}">Read how we work →</a></p></div></section>
 <section class="alt"><div class="wrap meet"><img src="{B('/img/james-stallworth.jpg')}" alt="James Stallworth, owner of American Equity Group, holding a SOLD sign" width="220" height="220" loading="lazy">
 <div><p class="sec-eyebrow">Who you'll deal with</p><h2>Local, veteran-owned, and in the deals every day</h2>
-<p>American Equity Group is owned by James Stallworth, a Navy veteran who has been buying houses across North Florida since 2016 as <a href="{SISTER}/">Jacksonville Cash Home Buyers</a>. We buy direct from owners, so the deals you see here are not on the MLS.</p>
+<p>American Equity Group is owned by James Stallworth, a Navy veteran who has been buying houses across North Florida since 2016. We buy direct from owners, so the deals you see here are not on the MLS.</p>
 <p>When you call {PHONE}, you reach our team, not a call center.</p></div></div></section>
 {cta()}""")
 
@@ -313,7 +312,7 @@ page("/current-deals/", "Current Off-Market Deals in Jacksonville FL | AEG",
          {"@type": "ListItem", "position": i + 1, "url": SITE + deal_url(d), "name": d["title"]} for i, d in enumerate(available)]}])
 
 # ---------- JOIN ----------
-page("/join-buyers-list/", "Join the Jacksonville Cash Buyers List | AEG",
+page("/join-buyers-list/", "Join Our Cash Buyers List in Jacksonville | AEG",
      "Get off-market Jacksonville deals that match what you buy: rentals, flips, land and multifamily. Free sign-up, deal alerts by text and email.",
      f"""<section class="hero plain"><div class="wrap"><p class="eyebrow">Free for investors</p><h1>Join the Cash Buyers List</h1>
 <p class="lead">Tell us where you buy, your price range and your strategy. When a deal fits, you get it before the full list.</p></div></section>
@@ -362,8 +361,38 @@ page("/contact/", "Contact American Equity Group | (904) 685-8024",
 <a class="btn" href="tel:{TEL}">Call now</a> <a class="btn" style="background:var(--navy)" href="sms:{TEL}">Send a text</a>
 <p style="margin-top:18px;font-size:15px">Mon to Sat, 8 AM to 7:30 PM. Leave a message after hours and we'll get back to you.</p></div>
 <div><h2>When you reach out</h2><ul class="checks"><li>Tell us which deal, by street name, so we can pull it up fast</li>
-<li>Have your funding ready: cash or hard money</li><li>Selling a house instead? Visit <a href="{SISTER}/">Jacksonville Cash Home Buyers</a></li></ul>
+<li>Have your funding ready: cash or hard money</li><li>Ask for photos, the parcel map or a walk-through</li></ul>
 <p><a href="{B('/join-buyers-list/')}">Join the buyers list →</a></p></div></div></section>""")
+
+
+# ---------- LEGAL ----------
+def legal(h1, updated, sections):
+    body = "".join(f"<h2 style=\"font-size:22px;margin-top:28px\">{h}</h2><p>{t}</p>" for h, t in sections)
+    return f"""<section class="hero plain"><div class="wrap"><h1>{h1}</h1><p class="lead">Last updated: {updated}</p></div></section>
+<section><div class="wrap" style="max-width:820px">{body}</div></section>"""
+
+page("/privacy-policy/", "Privacy Policy | American Equity Group",
+     "How American Equity Group collects and uses information from investors and buyers who use equitygroupjax.com or join our buyers list.",
+     legal("Privacy Policy", "November 5, 2026", [
+         ("Who we are", "American Equity Group LLC (\"we,\" \"us\") markets off-market real estate to investors. This policy explains what we collect on equitygroupjax.com and how we use it."),
+         ("Information we collect", "Information you give us, such as your name, phone number, email and buying criteria (areas, price range, property types, funding and timeline), and basic usage data like pages visited and browser type."),
+         ("How we use it", "To match you with properties that fit your criteria, send deal alerts you have agreed to receive, and respond to your questions. We do not sell your personal information."),
+         ("Text messages", f"If you agree to receive texts from {PHONE}, message frequency varies and message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of any purchase. Mobile numbers and SMS consent are not shared with third parties or affiliates for marketing purposes."),
+         ("Sharing", "We share information only with service providers who help us operate (for example our CRM, title companies and closing agents) or when required by law."),
+         ("Your choices", f"You can ask us to update or delete your information or stop contacting you at any time. Call or text {PHONE}, or reply STOP to any text."),
+     ]))
+
+page("/terms/", "Terms of Use | American Equity Group",
+     "Terms for using equitygroupjax.com and receiving off-market deal information from American Equity Group LLC in Jacksonville, FL.",
+     legal("Terms of Use", "November 5, 2026", [
+         ("Using this site", "By using equitygroupjax.com you agree to these terms."),
+         ("Deal information", "Property details, prices and numbers (including ARV, repairs and rents) are estimates provided for convenience. Buyer must verify all information, including size, zoning, buildability, utilities, condition and title, before closing. We make no promises about any of them."),
+         ("Not an offer or advice", "Content on this site is general information, not legal, tax, investment or financial advice. A purchase happens only under a written agreement signed by both parties. Deals are offered first come, first served and may be withdrawn at any time."),
+         ("We are not agents", "American Equity Group LLC is a real estate investment company, not a real estate brokerage, and holds equitable interest in the properties it markets."),
+         ("Communications", f"By joining our buyers list you agree that we may contact you by phone, text and email about properties. Message and data rates may apply. Reply STOP to opt out of texts. Consent is not a condition of purchase."),
+         ("Limitation of liability", "This site is provided \"as is.\" We are not liable for damages arising from its use."),
+         ("Contact", f"Call or text {PHONE}."),
+     ]))
 
 # ---------- DEAL PAGES ----------
 for d in DEALS:
