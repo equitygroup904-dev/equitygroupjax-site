@@ -13,8 +13,8 @@ DIST = os.path.join(ROOT, "docs")
 SITE = "https://equitygroupjax.com"
 # While the site is previewed at equitygroup904-dev.github.io/equitygroupjax-site/ every link
 # needs this prefix. At the DNS switch set BASE = "" and LIVE = True (adds CNAME, allows indexing).
-BASE = "/equitygroupjax-site"
-LIVE = False
+BASE = ""
+LIVE = True
 
 BRAND = "American Equity Group"
 PHONE = "(904) 685-8024"
