@@ -30,7 +30,7 @@ B = lambda p: BASE + p  # site-relative link
 BUSINESS_SCHEMA = {
     "@context": "https://schema.org", "@type": "LocalBusiness", "@id": SITE + "/#business",
     "name": BRAND + " (Jacksonville Cash Home Buyers)", "legalName": "American Equity Group LLC",
-    "url": SITE + "/", "telephone": TEL, "image": SITE + "/img/jax-skyline-hero.webp",
+    "url": SITE + "/", "telephone": TEL, "logo": SITE + "/img/american-equity-group-logo.webp", "image": SITE + "/img/jax-skyline-hero.webp",
     "description": "Off-market investment properties, rentals, fix-and-flips and land in Jacksonville and North Florida for cash buyers.",
     "address": {"@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US"},
     "areaServed": [{"@type": "AdministrativeArea", "name": c + " County, FL"} for c in
@@ -46,7 +46,7 @@ CSS = """
 img{max-width:100%;height:auto}a{color:var(--green-d)}.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
 .top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:40}.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
 .logo{color:#fff;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:.2px;line-height:1.1;display:flex;align-items:center;gap:10px}
-.logo .mk{display:inline-flex;width:38px;height:38px;border-radius:9px;background:var(--green);align-items:center;justify-content:center;font-size:15px;letter-spacing:.5px}
+.logo img{height:48px;width:auto;background:#fff;border-radius:10px;padding:3px 4px}
 .logo small{display:block;font-weight:600;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mint)}
 .nav{display:flex;gap:20px}.nav a{color:#dbe6f2;text-decoration:none;font-size:15px}.nav a:hover,.nav a[aria-current]{color:#fff}
 .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:9px;white-space:nowrap;border:0}
@@ -160,7 +160,7 @@ def shell(slug, title, desc, body, schema=None, active=None):
 <link rel="icon" href="{B('/favicon.svg')}" type="image/svg+xml">
 {ld}
 <style>{css}</style></head><body>
-<header class="top"><div class="wrap"><a class="logo" href="{B('/')}"><span class="mk">AEG</span><span>{BRAND}<small>Jacksonville Off-Market Deals</small></span></a>
+<header class="top"><div class="wrap"><a class="logo" href="{B('/')}"><img src="{B('/img/american-equity-group-logo.webp')}" alt="American Equity Group logo" width="47" height="48"><span>{BRAND}<small>Jacksonville Off-Market Deals</small></span></a>
 <nav class="nav" aria-label="Main">{nav}</nav><a class="btn sm" href="tel:{TEL}">{PHONE}</a></div></header>
 <main>
 {body}
