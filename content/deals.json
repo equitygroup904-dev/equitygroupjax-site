@@ -1,5 +1,41 @@
 [
   {
+    "slug": "townhouse-jacksonville-32210-7647-n-melissa-ct",
+    "status": "Available",
+    "type": "Townhouse",
+    "title": "3/2 Townhouse in Jacksonville 32210, $89,900 Off-Market",
+    "address": "7647 N Melissa Ct",
+    "city": "Jacksonville",
+    "zip": "32210",
+    "county": "Duval",
+    "price": 89900,
+    "headline": "3 bed, 2 bath townhouse on the Westside",
+    "beds_baths": "3 / 2",
+    "sqft": "1,193",
+    "parcel_id": "013861-0364",
+    "county_record": "https://paopropertysearch.coj.net/Basic/Detail.aspx?RE=0138610364",
+    "est_arv": null,
+    "est_repairs": null,
+    "est_rent": null,
+    "details": [
+      "Townhouse",
+      "3 bedrooms, 2 bathrooms",
+      "Approx. 1,193 sq ft"
+    ],
+    "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
+    "photos": [
+      {
+        "src": "/img/deals/7647-n-melissa-ct-jacksonville-32210-townhouse-front.webp",
+        "alt": "Front of the townhouse at 7647 N Melissa Ct, Jacksonville FL 32210"
+      },
+      {
+        "src": "/img/deals/7647-n-melissa-ct-jacksonville-32210-parcel-map.webp",
+        "alt": "Aerial parcel map of 7647 N Melissa Ct, Jacksonville FL 32210, with the lot outlined"
+      }
+    ],
+    "listed": "2026-11-07"
+  },
+  {
     "slug": "vacant-lot-jacksonville-32209-4508-friden-dr",
     "status": "Available",
     "type": "Land",
