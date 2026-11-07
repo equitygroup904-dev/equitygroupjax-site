@@ -209,7 +209,7 @@ def deal_card(d):
         sub = d.get("lot_size")
     else:
         bb = d.get("beds_baths", "").replace(" ", "").split("/")
-        sub = " · ".join(x for x in [f"{bb[0]} bd / {bb[1]} ba" if len(bb) == 2 else "", f"{d['sqft']} sq ft" if d.get("sqft") else ""] if x)
+        sub = d.get("card_sub") or " · ".join(x for x in [f"{bb[0]} bd / {bb[1]} ba" if len(bb) == 2 else "", f"{d['sqft']} sq ft" if d.get("sqft") else ""] if x)
     nums = ""
     if d.get("est_rent"):
         nums = f'<span class="meta">Est. rent {money(d["est_rent"])}/mo · Est. ARV {money(d.get("est_arv"))}</span>'

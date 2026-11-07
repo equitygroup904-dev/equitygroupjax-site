@@ -1,5 +1,44 @@
 [
   {
+    "slug": "two-houses-jacksonville-32207-2624-spring-park-rd",
+    "status": "Available",
+    "type": "2 Houses on 1 Lot",
+    "title": "2 Houses on 1 Lot, Spring Park 32207, $235,700 Off-Market",
+    "address": "2624 Spring Park Rd",
+    "city": "Jacksonville",
+    "zip": "32207",
+    "county": "Duval",
+    "price": 235700,
+    "headline": "2 separate houses on one parcel, sold together",
+    "beds_baths": "2/2 + 1/1",
+    "card_sub": "Front 2/2 + back 1/1 · 1 parcel",
+    "parcel_id": "125379-0000",
+    "county_record": "https://paopropertysearch.coj.net/Basic/Detail.aspx?RE=1253790000",
+    "est_arv": null,
+    "est_repairs": null,
+    "est_rent": null,
+    "details": [
+      "2 separate houses on 1 parcel, sold together",
+      "Front house: 2-story, 2 bed / 2 bath, vacant",
+      "Back house: 1 bed / 1 bath, tenant paying $600/mo",
+      "Garage could be converted to an ADU (buyer to verify with the City)",
+      "Good fit for PadSplit / rent-by-room",
+      "Recent roof and exterior updates (as stated)"
+    ],
+    "terms": "Cash or hard money. Assignment. First come, first served.",
+    "photos": [
+      {
+        "src": "/img/deals/2624-spring-park-rd-jacksonville-32207-front-house.webp",
+        "alt": "Front house at 2624 Spring Park Rd, Jacksonville FL 32207"
+      },
+      {
+        "src": "/img/deals/2624-spring-park-rd-jacksonville-32207-back-house.webp",
+        "alt": "Back house at 2624 Spring Park Rd, Jacksonville FL 32207"
+      }
+    ],
+    "listed": "2026-11-07"
+  },
+  {
     "slug": "house-and-lot-jacksonville-32209-1966-w-10th-st",
     "status": "Available",
     "type": "House + Lot",
