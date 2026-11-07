@@ -1,5 +1,49 @@
 [
   {
+    "slug": "house-and-lot-jacksonville-32209-1966-w-10th-st",
+    "status": "Available",
+    "type": "House + Lot",
+    "title": "4/2 House + Extra Lot, Jacksonville 32209, Price Drop $79,000",
+    "address": "1966 W 10th St & 0 W 10th St",
+    "city": "Jacksonville",
+    "zip": "32209",
+    "county": "Duval",
+    "price": 79000,
+    "headline": "Price drop: 4 bed, 2 bath house plus the vacant lot next door, sold together",
+    "beds_baths": "4 / 2",
+    "sqft": "1,512",
+    "parcel_id": "051667-0000 & 051665-0010",
+    "county_record": "https://paopropertysearch.coj.net/Basic/Detail.aspx?RE=0516670000",
+    "county_records_extra": [
+      {
+        "label": "View the county record for the vacant lot (0 W 10th St)",
+        "url": "https://paopropertysearch.coj.net/Basic/Detail.aspx?RE=0516650010"
+      }
+    ],
+    "est_arv": null,
+    "est_repairs": null,
+    "est_rent": null,
+    "details": [
+      "Price reduced to $79,000",
+      "2 parcels sold together: the house and the vacant lot next door",
+      "House: 4 bedrooms, 2 bathrooms, approx. 1,512 heated sq ft, built 1929 (per county)",
+      "House lot approx. 60' x 105'; vacant lot approx. 30' x 105' (per county)",
+      "Zoned RLD-60 per county record"
+    ],
+    "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
+    "photos": [
+      {
+        "src": "/img/deals/1966-w-10th-st-jacksonville-32209-house-rear.webp",
+        "alt": "Rear of the house at 1966 W 10th St, Jacksonville FL 32209"
+      },
+      {
+        "src": "/img/deals/1966-w-10th-st-jacksonville-32209-back-yard.webp",
+        "alt": "Back yard at 1966 W 10th St, Jacksonville FL 32209"
+      }
+    ],
+    "listed": "2026-11-07"
+  },
+  {
     "slug": "townhouse-jacksonville-32210-7647-n-melissa-ct",
     "status": "Available",
     "type": "Townhouse",

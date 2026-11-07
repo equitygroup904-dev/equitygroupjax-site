@@ -422,6 +422,8 @@ for d in DEALS:
     bullets = "".join(f"<li>{esc(x)}</li>" for x in d.get("details", []))
     county_link = (f'<p style="margin-top:12px"><a href="{esc(d["county_record"])}" target="_blank" rel="noopener">View the county property appraiser record →</a></p>'
                    if d.get("county_record") else "")
+    for extra in d.get("county_records_extra", []):
+        county_link += f'<p style="margin-top:6px"><a href="{esc(extra["url"])}" target="_blank" rel="noopener">{esc(extra["label"])} →</a></p>'
     land_note = (" On land, buyer verifies zoning, buildability, utilities, size and title. We make no promises on any of them."
                  if d["type"] == "Land" else "")
     desc = f"{d['headline']} in {area(d)}, {d['county']} County. {money(d['price'])}, off-market, assignment. Call or text {PHONE}."
