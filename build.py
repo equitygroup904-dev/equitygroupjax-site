@@ -378,25 +378,27 @@ def legal(h1, updated, sections):
 
 page("/privacy-policy/", "Privacy Policy | American Equity Group",
      "How American Equity Group collects and uses information from investors and buyers who use equitygroupjax.com or join our buyers list.",
-     legal("Privacy Policy", "November 5, 2026", [
+     legal("Privacy Policy", "November 10, 2026", [
          ("Who we are", "American Equity Group LLC (\"we,\" \"us\") markets off-market real estate to investors. This policy explains what we collect on equitygroupjax.com and how we use it."),
          ("Information we collect", "Information you give us, such as your name, phone number, email and buying criteria (areas, price range, property types, funding and timeline), and basic usage data like pages visited and browser type."),
          ("How we use it", "To match you with properties that fit your criteria, send deal alerts you have agreed to receive, and respond to your questions. We do not sell your personal information."),
          ("Text messages", f"If you agree to receive texts from {PHONE}, message frequency varies and message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of any purchase. Mobile numbers and SMS consent are not shared with third parties or affiliates for marketing purposes."),
          ("Sharing", "We share information only with service providers who help us operate (for example our CRM, title companies and closing agents) or when required by law."),
          ("Your choices", f"You can ask us to update or delete your information or stop contacting you at any time. Call or text {PHONE}, or reply STOP to any text."),
+         ("Contact us", f"American Equity Group LLC<br>4600 Touchton Road, Jacksonville, FL 32246<br>Call or text {PHONE}<br><a href=\"mailto:equitygroup904@gmail.com\">equitygroup904@gmail.com</a>"),
      ]))
 
 page("/terms/", "Terms of Use | American Equity Group",
      "Terms for using equitygroupjax.com and receiving off-market deal information from American Equity Group LLC in Jacksonville, FL.",
-     legal("Terms of Use", "November 5, 2026", [
+     legal("Terms of Use", "November 10, 2026", [
          ("Using this site", "By using equitygroupjax.com you agree to these terms."),
          ("Deal information", "Property details, prices and numbers (including ARV, repairs and rents) are estimates provided for convenience. Buyer must verify all information, including size, zoning, buildability, utilities, condition and title, before closing. We make no promises about any of them."),
          ("Not an offer or advice", "Content on this site is general information, not legal, tax, investment or financial advice. A purchase happens only under a written agreement signed by both parties. Deals are offered first come, first served and may be withdrawn at any time."),
          ("We are not agents", "American Equity Group LLC is a real estate investment company, not a real estate brokerage, and holds equitable interest in the properties it markets."),
-         ("Communications", f"By joining our buyers list you agree that we may contact you by phone, text and email about properties. Message and data rates may apply. Reply STOP to opt out of texts. Consent is not a condition of purchase."),
+         ("Communications", "By joining our buyers list you agree that we may contact you by phone, text and email about properties."),
+         ("Text messaging terms", f"If you check the SMS consent box on our forms, American Equity Group may text you at the number you provide about your buyer account, properties you ask about and, if you opt in to marketing texts, off-market deal alerts. Messages come from {PHONE}. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time; you will get one message confirming you are unsubscribed. Reply HELP for help, or call or text {PHONE}. Carriers are not liable for delayed or undelivered messages. Consent to receive texts is not a condition of any purchase. See our <a href=\"/privacy-policy/\">Privacy Policy</a> for how we handle your information; mobile numbers and SMS consent are never shared with third parties or affiliates for marketing purposes."),
          ("Limitation of liability", "This site is provided \"as is.\" We are not liable for damages arising from its use."),
-         ("Contact", f"Call or text {PHONE}."),
+         ("Contact", f"American Equity Group LLC<br>4600 Touchton Road, Jacksonville, FL 32246<br>Call or text {PHONE}<br><a href=\"mailto:equitygroup904@gmail.com\">equitygroup904@gmail.com</a>"),
      ]))
 
 # ---------- DEAL PAGES ----------
