@@ -18,6 +18,7 @@ LIVE = True
 
 BRAND = "American Equity Group"
 PHONE = "(904) 685-8024"
+SMS_PHONE = "(904) 849-9656"  # number buyer texts are sent from
 TEL = "+19046858024"
 
 # GHL "Cash Buyer Sign-Up" form, GHL sub-account RUJDZc7TyNghXiWDMthZ ONLY.
@@ -398,7 +399,7 @@ page("/terms/", "Terms of Use | American Equity Group",
          ("Not an offer or advice", "Content on this site is general information, not legal, tax, investment or financial advice. A purchase happens only under a written agreement signed by both parties. Deals are offered first come, first served and may be withdrawn at any time."),
          ("We are not agents", "American Equity Group LLC is a real estate investment company, not a real estate brokerage, and holds equitable interest in the properties it markets."),
          ("Communications", "By joining our buyers list you agree that we may contact you by phone, text and email about properties."),
-         ("Text messaging terms", f"If you check the SMS consent box on our forms, American Equity Group may text you at the number you provide about your buyer account, properties you ask about and, if you opt in to marketing texts, off-market deal alerts. Messages come from {PHONE}. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time; you will get one message confirming you are unsubscribed. Reply HELP for help, or call or text {PHONE}. Carriers are not liable for delayed or undelivered messages. Consent to receive texts is not a condition of any purchase. See our <a href=\"/privacy-policy/\">Privacy Policy</a> for how we handle your information; mobile numbers and SMS consent are never shared with third parties or affiliates for marketing purposes."),
+         ("Text messaging terms", f"If you check the SMS consent box on our forms, American Equity Group may text you at the number you provide about your buyer account, properties you ask about and, if you opt in to marketing texts, off-market deal alerts. Messages come from {SMS_PHONE}. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time; you will get one message confirming you are unsubscribed. Reply HELP for help, or call {PHONE}. Carriers are not liable for delayed or undelivered messages. Consent to receive texts is not a condition of any purchase. See our <a href=\"/privacy-policy/\">Privacy Policy</a> for how we handle your information; mobile numbers and SMS consent are never shared with third parties or affiliates for marketing purposes."),
          ("Limitation of liability", "This site is provided \"as is.\" We are not liable for damages arising from its use."),
          ("Contact", f"American Equity Group LLC<br>4600 Touchton Road, Jacksonville, FL 32246<br>Call or text {PHONE}<br><a href=\"mailto:equitygroup904@gmail.com\">equitygroup904@gmail.com</a>"),
      ]))
