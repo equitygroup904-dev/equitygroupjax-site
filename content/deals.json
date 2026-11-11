@@ -161,7 +161,7 @@
     "county": "Nassau",
     "price": 97900,
     "headline": "Vacant beachfront land on Amelia Island",
-    "lot_size": "Approx. 100' x 35' (3,500 sq ft, about 0.08 acre)",
+    "lot_size": "Approx. 100' x 200' (20,000 sq ft, about 0.46 acre)",
     "utilities": "",
     "zoning": "",
     "parcel_id": "",
@@ -170,7 +170,7 @@
     "est_rent": null,
     "details": [
       "Vacant beachfront land",
-      "Approx. 100' x 35' (3,500 sq ft)",
+      "Approx. 100' x 200' (20,000 sq ft)",
       "No survey on file"
     ],
     "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
@@ -181,6 +181,6 @@
       }
     ],
     "listed": "2026-11-04",
-    "photo_caption": "Plat map shown for location. Lot is approx. 100' x 35' per seller; buyer to verify size with a survey."
+    "photo_caption": "Plat map shown for location. Lot is approx. 100' x 200' per seller; buyer to verify size with a survey."
   }
 ]
