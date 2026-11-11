@@ -251,8 +251,7 @@ your price range and what you buy (rentals, flips, land or multifamily) to <a hr
     return f"""<div class="formcard" id="join"><h2 style="font-size:24px">Join the Cash Buyers List</h2>
 <p style="color:var(--mute);margin:0 0 14px">Free. Takes about a minute. We only send deals that fit what you buy.</p>
 <div class="formslot">{embed}</div>
-<p style="font-size:13px;color:var(--mute);margin:12px 0 0">By signing up you agree to receive deal alerts by text from {PHONE} and by email.
-Msg and data rates may apply. Reply STOP to opt out at any time.</p></div>"""
+<p style="font-size:13px;color:var(--mute);margin:12px 0 0">Texts are sent only if you check the SMS consent box. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of any purchase or rental. See our <a href="{B('/privacy-policy/')}">Privacy Policy</a> and <a href="{B('/terms/')}">Terms of Use</a>.</p></div>"""
 
 
 STEPS = [
@@ -371,22 +370,24 @@ page("/contact/", "Contact American Equity Group | (904) 685-8024",
 
 
 # ---------- LEGAL ----------
-def legal(h1, updated, sections):
-    body = "".join(f"<h2 style=\"font-size:22px;margin-top:28px\">{h}</h2><p>{t}</p>" for h, t in sections)
-    return f"""<section class="hero plain"><div class="wrap"><h1>{h1}</h1><p class="lead">Last updated: {updated}</p></div></section>
+def legal(h1, updated, sections, intro="", label="Last updated"):
+    body = (f"<p>{intro}</p>" if intro else "") + "".join(f"<h2 style=\"font-size:22px;margin-top:28px\">{h}</h2><p>{t}</p>" for h, t in sections)
+    return f"""<section class="hero plain"><div class="wrap"><h1>{h1}</h1><p class="lead">{label}: {updated}</p></div></section>
 <section><div class="wrap" style="max-width:820px">{body}</div></section>"""
 
 page("/privacy-policy/", "Privacy Policy | American Equity Group",
-     "How American Equity Group collects and uses information from investors and buyers who use equitygroupjax.com or join our buyers list.",
-     legal("Privacy Policy", "November 10, 2026", [
-         ("Who we are", "American Equity Group LLC (\"we,\" \"us\") markets off-market real estate to investors. This policy explains what we collect on equitygroupjax.com and how we use it."),
-         ("Information we collect", "Information you give us, such as your name, phone number, email and buying criteria (areas, price range, property types, funding and timeline), and basic usage data like pages visited and browser type."),
-         ("How we use it", "To match you with properties that fit your criteria, send deal alerts you have agreed to receive, and respond to your questions. We do not sell your personal information."),
-         ("Text messages", f"If you agree to receive texts from {PHONE}, message frequency varies and message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of any purchase. Mobile numbers and SMS consent are not shared with third parties or affiliates for marketing purposes."),
-         ("Sharing", "We share information only with service providers who help us operate (for example our CRM, title companies and closing agents) or when required by law."),
-         ("Your choices", f"You can ask us to update or delete your information or stop contacting you at any time. Call or text {PHONE}, or reply STOP to any text."),
-         ("Contact us", f"American Equity Group LLC<br>4600 Touchton Road, Jacksonville, FL 32246<br>Call or text {PHONE}<br><a href=\"mailto:equitygroup904@gmail.com\">equitygroup904@gmail.com</a>"),
-     ]))
+     "How American Equity Group collects, uses and protects your information on equitygroupjax.com, including text message consent and opt-out.",
+     legal("Privacy Policy", "November 11, 2026", [
+         ("Information We Collect", "When you fill out a form, call, text, or email us, we may collect your name, phone number, email address, property address, and any details you choose to share about a property. We may also collect basic website data such as browser type, pages visited, and IP address through cookies and analytics tools."),
+         ("How We Use Your Information", "We use your information to respond to your inquiries, share available rental and investment properties, process rental applications, send updates you have requested, and improve our website and services."),
+         ("Text Messaging", "If you provide your phone number and consent, we may send you text messages about properties, appointments, and your inquiry. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time, or HELP for help. <b>Mobile phone numbers and SMS consent are never shared with or sold to third parties or affiliates for marketing purposes.</b>"),
+         ("Sharing Your Information", "We do not sell your personal information. We may share it only with service providers that help us run our business (such as our CRM, email, and website hosting providers), when required by law, or with your permission."),
+         ("Data Security", "We use reasonable measures to protect your information, but no method of transmission over the internet is 100% secure."),
+         ("Your Choices", "You may opt out of texts by replying STOP and out of emails by using the unsubscribe link. You may request that we update or delete your information by contacting us."),
+         ("Children's Privacy", "Our website is not intended for anyone under 18, and we do not knowingly collect information from children."),
+         ("Changes to This Policy", "We may update this policy from time to time. Changes will be posted on this page with a new effective date."),
+         ("Contact Us", f"American Equity Group<br>4600 Touchton Road East, Suite 1150, Jacksonville, FL 32246<br>Call or text <a href=\"tel:{TEL}\">{PHONE}</a><br><a href=\"mailto:equitygroup904@gmail.com\">equitygroup904@gmail.com</a>"),
+     ], intro="American Equity Group (\"we,\" \"us,\" \"our\") operates equitygroupjax.com. This policy explains how we collect, use, and protect your information.", label="Effective date"))
 
 page("/terms/", "Terms of Use | American Equity Group",
      "Terms for using equitygroupjax.com and receiving off-market deal information from American Equity Group LLC in Jacksonville, FL.",
