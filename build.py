@@ -149,6 +149,7 @@ def shell(slug, title, desc, body, schema=None, active=None):
     css = CSS.replace("IMGBASE", BASE)
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>if(location.protocol==="http:"&&location.hostname.indexOf("equitygroupjax.com")>-1)location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="{robots}">
