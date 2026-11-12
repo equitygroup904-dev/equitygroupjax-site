@@ -284,10 +284,6 @@ page("/", "Jacksonville Off-Market Properties for Cash Buyers | AEG",
 <ul class="checks"><li>Deals sent to matched buyers first</li><li>Price, size and estimated numbers on every deal</li><li>Close in 14 to 21 days, cash or hard money</li></ul>
 <div class="ctas"><a class="btn" href="{B('/join-buyers-list/')}">Join the Buyers List</a><a class="btn ghost" href="{B('/current-deals/')}">See Current Deals</a></div></div></section>
 {stats()}
-<section><div class="wrap"><p class="sec-eyebrow">Current deals</p><h2>Off-market deals available now</h2>
-<p class="intro">New deals go up here the same day they go out to the buyers list. Buyers on the list hear first.</p>
-{deal_grid(available[:6])}
-<p style="margin-top:22px"><a class="btn" href="{B('/current-deals/')}">All current deals</a></p></div></section>
 <section class="alt"><div class="wrap"><p class="sec-eyebrow">What we offer</p><h2>Deals for how you invest</h2>
 <p class="intro">Tell us your strategy once. We match every new deal against it.</p>
 <div class="paths"><div class="path"><h3>Rentals</h3><p>Turnkey and value-add single-family and small multifamily with estimated rents, so you can check the cash flow fast.</p><a href="{B('/join-buyers-list/')}">Get rental deals →</a></div>
