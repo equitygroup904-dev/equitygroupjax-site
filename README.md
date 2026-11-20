@@ -9,7 +9,7 @@ Static site for American Equity Group (cash buyers), hosted on GitHub Pages from
 Rebuild: `python3 build.py`
 
 ## Rules the build enforces
-- Only phone number: (904) 685-8024
+- Only phone number: (904) 605-1786
 - Deals can never carry seller name/phone, contract price, mortgage or EMD (the build fails if they do)
 - "Buyer to verify" footer on every page
 

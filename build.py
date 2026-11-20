@@ -17,9 +17,9 @@ BASE = ""
 LIVE = True
 
 BRAND = "American Equity Group"
-PHONE = "(904) 685-8024"
-SMS_PHONE = "(904) 849-9656"  # number buyer texts are sent from
-TEL = "+19046858024"
+PHONE = "(904) 605-1786"
+SMS_PHONE = "(904) 605-1786"  # number buyer texts are sent from
+TEL = "+19046051786"
 
 # GHL "Cash Buyer Sign-Up" form, GHL sub-account RUJDZc7TyNghXiWDMthZ ONLY.
 # Paste the form ID here once the form is built in GHL. Until then the page shows a call/text fallback.
@@ -277,7 +277,7 @@ def stats():
 
 # ---------- HOME ----------
 page("/", "Jacksonville Off-Market Properties for Cash Buyers | AEG",
-     "Off-market rentals, fix-and-flips and land in Jacksonville and North Florida. Join the cash buyers list and get matched deals first. Call (904) 685-8024.",
+     "Off-market rentals, fix-and-flips and land in Jacksonville and North Florida. Join the cash buyers list and get matched deals first. Call (904) 605-1786.",
      f"""<section class="hero"><div class="wrap"><p class="eyebrow">For cash buyers and investors</p>
 <h1>Off-Market Investment Properties in Jacksonville</h1>
 <p class="lead">Rentals, fix-and-flips and land across Duval, Nassau, Clay and St. Johns, bought direct from owners and offered to our buyers before anyone else.</p>
@@ -354,8 +354,8 @@ page("/how-we-work/", "How Our Off-Market Deals Work | American Equity Group",
          {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQS]}])
 
 # ---------- CONTACT ----------
-page("/contact/", "Contact American Equity Group | (904) 685-8024",
-     "Questions about a deal or getting on the buyers list? Call or text American Equity Group in Jacksonville at (904) 685-8024.",
+page("/contact/", "Contact American Equity Group | (904) 605-1786",
+     "Questions about a deal or getting on the buyers list? Call or text American Equity Group in Jacksonville at (904) 605-1786.",
      f"""<section class="hero plain"><div class="wrap"><p class="eyebrow">Contact</p><h1>Talk to Our Team</h1>
 <p class="lead">Questions about a deal, a walk-through, or what we have coming up? Call or text.</p></div></section>
 <section><div class="wrap grid2" style="align-items:start"><div class="box" style="text-align:center;padding:32px">
