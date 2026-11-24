@@ -1,33 +1,29 @@
 [
   {
-    "slug": "lot-with-tenant-jacksonville-32210-8056-vining-st",
+    "slug": "lot-jacksonville-32210-8056-vining-st",
     "status": "Available",
     "type": "Land",
-    "title": "Lot + $425/mo Lot Fee, Jacksonville 32210, $34,700 Off-Market",
+    "title": "Lot in Jacksonville 32210, $34,700 Off-Market",
     "address": "8056 Vining St",
     "city": "Jacksonville",
     "zip": "32210",
     "county": "Duval",
     "price": 34700,
-    "headline": "Westside lot with a tenant paying a $425/mo lot fee, or build new",
+    "headline": "Westside lot with a tenant paying a $425/mo lot fee",
     "lot_size": "Approx. 6,762 sq ft (50' x 132')",
     "utilities": "",
-    "zoning": "RLD-60 (per county record)",
+    "zoning": "RLD-60",
     "parcel_id": "013215-0016",
     "county_record": "https://paopropertysearch.coj.net/Basic/Detail.aspx?RE=0132150016",
-    "est_arv": 240000,
+    "est_arv": null,
     "est_repairs": null,
-    "est_rent": 425,
+    "est_rent": null,
     "details": [
-      "Tenant in place paying a $425/mo lot fee, month to month ($5,100/yr)",
-      "Approx. 6,762 sq ft lot (50' x 132')",
-      "Zoned RLD-60 per county record",
-      "Est. new construction ARV about $240,000, based on nearby home sales",
-      "Nearby sales: 8348 Nussbaum Dr sold $250,020 (8/2025); 8123 Vining St sold $210,000 (7/2026)",
-      "County record lists a 1989 mobile home on the parcel; buyer to confirm who owns it and the lease terms",
-      "Collect the lot fee now, or clear the lot and build later (buyer to verify buildability with the City)"
+      "Lot, approx. 6,762 sq ft (50' x 132')",
+      "Tenant in place paying a $425/mo lot fee",
+      "Zoned RLD-60 per county record"
     ],
-    "terms": "Cash or hard money. Assignment. First come, first served.",
+    "terms": "Cash or hard money. Close in 14 to 21 days. Assignment. First come, first served.",
     "photos": [
       {
         "src": "/img/deals/8056-vining-st-jacksonville-32210-street-view.webp",
@@ -35,10 +31,9 @@
       },
       {
         "src": "/img/deals/8056-vining-st-jacksonville-32210-parcel-map.webp",
-        "alt": "Aerial parcel map of 8056 Vining St, Jacksonville FL 32210, with the lot outlined in black"
+        "alt": "Aerial parcel map of 8056 Vining St, Jacksonville FL 32210, with the lot outlined"
       }
     ],
-    "photo_caption": "Street view is from April 2025. The parcel map outlines the lot (parcel 013215-0016).",
     "listed": "2026-11-24"
   },
   {
